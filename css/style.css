@@ -1,0 +1,562 @@
+/* ======================= common css start ============================ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ----------------------- common css end ------------------------------ */
+/* ======================= common css start ============================ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ol,ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p,a,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+/* ----------------------- common css end ------------------------------ */
+/* ======================= root css start ============================ */
+:root{
+    --Roboto:'Roboto', sans-serif;
+    --band_color:#1A5D1A;
+}
+/* ----------------------- root css end ------------------------------ */
+/* ======================= menu css start ============================ */
+.main_menu{
+    width: 100%;
+    height: 80px;
+    background: #FFF8EE;
+}
+.main_menu ul{
+    gap: 30px;
+}
+.main_menu ul li a{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: uppercase;
+}
+.menu_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+}
+.main_menu .menu_button a{
+    height: 50px;
+    width: 150px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+}
+.menu_button .menu_loggin{
+    width: 110px !important;
+}
+/* ----------------------- menu css end ------------------------------ */
+/* ======================= banner css start ============================ */
+#banner{
+    width: 100%;
+    background: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc();
+}
+.banner_image{
+    width: 424px;
+    margin: 0 auto;
+}
+.banner_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.banner_button a{
+    width: 250px;
+    height: 60px;
+    background: #FFF8EE;
+    border-radius: 50px;
+    border: 1px solid #FFF8EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #000;
+}
+.banner_button_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+    margin: 30px 0;
+}
+.banner_button_call a {
+    height: 40px;
+    width: 40px;
+    background: #D9D9D9;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+    overflow: hidden;
+    transition: all linear 0.3s;
+}
+
+.banner_button_call a:hover {
+    width: 244px;
+    height: 40px;
+}
+
+.banner_button_call a .banner_icon_img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #D9D9D9;
+    background: #D9D9D9;
+}
+
+.banner_button_call a span {
+    font-size: 18px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    margin-left: 16px;
+}
+.banner_social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.social_media_icon{
+    height: 35px; 
+    width: 35px;
+}
+/* ----------------------- banner css end ------------------------------ */
+/* ======================= offer Dishes css start ============================ */
+#offer_dishes{
+    width: 100%;
+    background: url(../image/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 58px 0 72px;
+}
+.offer_dishes_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center;
+}
+.offer_dishes_head h2{
+    font-size: 35px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 4px 0 22px;
+}
+.offer_dishes_item{
+    width: 281px;
+    height: 281px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.offer_dishes_img{
+    width: 250px;
+    border-radius: 15px;
+}
+.offer p{
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    font-family:var(--Roboto)  ;
+    color:#DD0606;
+    padding: 14px;
+    text-align: center;
+    text-decoration: underline;
+    position: absolute;
+    top: 0px;
+    right: 55px;
+    z-index: 999;
+}
+.slick-dotted ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.slick-dotted ul li button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--band_color);
+    background: transparent;
+    font-size: 0;
+    overflow: hidden;
+}
+.slick-dotted ul .slick-active button{
+    background: var(--band_color);
+}
+/* ----------------------- offer Dishes css end ------------------------------ */
+/* ======================= SPECIALS Dishes css start ============================ */
+#specials_dishes{
+    width: 100%;
+    background: url(../image/Rectangle\ 11.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 115px 0 51px;
+}
+.specials_dishes_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.specials_dishes_item{
+    width: 350px;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.specials_dishes_item_head h3{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: var(--band_color);
+    text-align: center;
+    margin: 16px 0 8px;
+}
+.specials_dishes_item_head p{
+    width: 170px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--Roboto);
+    color: #000;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0 auto;
+}
+.order_button a{
+    width: 120px;
+    height: 30px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    margin: 16px 17px 10px;
+}
+.view_more a{
+    width: 150px;
+    height: 40px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    margin: 36px 0 0 200px;
+}
+/* ----------------------- SPECIALS Dishes css end ------------------------------ */
+/* ======================= menu css start ============================ */
+#menu{
+    width: 100%;
+    background: url(../image/Rectangle\ 15.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 40px 0 51px;
+}
+.menu_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center;
+}
+.menu_head h2{
+    font-size: 40px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 4px 0 31px;
+}
+.menu_card_item{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 103px;
+}
+
+.menu_card_list{
+    width: 486px;
+    padding: 21px 16px 40px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    background: rgba(217, 217, 217, 0.5);
+}
+.menu_card_list .menu_card_head h4{
+    font-size: 30px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-transform: uppercase;
+    text-align: center; 
+    position: relative;
+}
+.menu_card_list .menu_card_head h4::after{
+    content: '';
+    width: 200px;
+    height: 2px;
+    background: var(--band_color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menu_card_list_item ul{
+    list-style: disc;
+    margin-left: 25px;
+}
+.menu_card_food_head h6{
+    font-size: 20px;
+    font-weight: 600;
+    font-family:var(--Roboto)  ;
+    color: #000;
+    text-transform: uppercase;
+    margin-top: 24px;
+}
+.menu_card_food_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.food_item p{
+    width: 336px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-transform: uppercase;
+    position: relative;
+}
+.food_item p::after{
+    content: '';
+    width: 370px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.food_rate h5{
+    font-size: 18px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-transform: uppercase;
+}
+.menu_card_img{
+    width: 304px;
+}
+.prev_arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    background: #D9D9D9;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    z-index: 999;
+}
+.next_arrow{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #D9D9D9;
+    background: #D9D9D9;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right:0px;
+    z-index: 999;
+}
+/* ----------------------- menu css end ------------------------------ */
+/* ======================= common css start ============================ */
+#food_gallery{
+    background: #FFF8EE;
+    padding: 61px 0 70PX;
+}
+.food_gallery_head h3{
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center;
+}
+.food_gallery_head h2{
+    font-size: 50px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #000 ;
+    text-align: center; 
+    text-transform: uppercase;
+    margin: 8px 0 26px;
+}
+.nav-tabs .nav-link {
+    width: 160px;
+    height: 50px;
+    background: var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-right: 27px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: #fff ;
+    text-transform: capitalize;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--band_color);
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.nav-tabs {
+    --bs-nav-tabs-border-width: none;
+    --bs-nav-tabs-border-color: none;
+    --bs-nav-tabs-border-radius: none;
+    --bs-nav-tabs-link-hover-border-color:none;
+    --bs-nav-tabs-link-active-color: none;
+    --bs-nav-tabs-link-active-bg: none;
+    --bs-nav-tabs-link-active-border-color: none;
+    border-bottom: none;
+    justify-content: center;
+    align-items: center;
+}
+.food_item_cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 39px;
+}
+.food_item_card{
+    width: 330px;
+    background: #fff;
+    padding: 25px 40px 14px 35px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    transition: all linear 0.3S;
+}
+.food_item_card:hover{
+    background: #FFF8EE;
+}
+.food_item_card_img{
+    width: 205px;
+    margin: 0 auto;
+}
+.food_item_card_head h4{
+    width: 232px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family:var(--Roboto)  ;
+    color: var(--band_color) ;
+    text-transform: capitalize;
+    margin: 20px 30px 20px 0;
+    text-align: center;
+}
+.food_item_card_head p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family:var(--Roboto)  ;
+    color: #000;
+}
+.food_item_card_botton a{
+    width: 130px;
+    height: 30px;
+    background: var(--band_color);
+    border: 1px solid var(--band_color);
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: var(--Roboto);
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 11px;
+}
+.food_card_icon a{
+    width: 32px;
+    height: 32px;
+    font-size: 30px;
+    color: #000;
+    margin:0 0 0 230px ;
+}
+/* ----------------------- common css end ------------------------------ */
+/* ======================= common css start ============================ */
+
+/* ----------------------- common css end ------------------------------ */
+/* ======================= common css start ============================ */
+
+/* ----------------------- common css end ------------------------------ */
+/* ======================= common css start ============================ */
+
+/* ----------------------- common css end ------------------------------ */
+/* ======================= common css start ============================ */
+
+/* ----------------------- common css end ------------------------------ */
